@@ -1,0 +1,107 @@
+.container {
+    padding-top: 2rem;
+}
+
+.workout-man {
+    margin-top: 1rem;
+    margin-left: 20%;
+}
+
+.workout-man img {
+    width: 80%;
+}
+
+.main {
+    background: var(--white);
+    width: 100%;
+    border-radius: 1.5rem;
+    z-index: 1;
+    padding: 1rem;
+    position: absolute;
+    top: 60%;
+}
+
+.workout-schedule {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--lighter-grey);
+    border-radius: 50px;
+    padding: 2rem;
+    width: 100%;
+    height: 4rem;
+}
+
+.workout-schedule h5 {
+    font-size: 1rem;
+    margin: 0;
+}
+
+.workout-schedule .btn {
+    width: 5rem;
+}
+
+.workout-graphic {
+    border-radius: 20px;
+    padding: 10%;
+}
+
+.workout-graphic img {
+    width: 100%;
+}
+
+.workout-btn img {
+    width: 2.5rem;
+}
+
+.for-you h3{
+    margin: 1rem;
+}
+
+.workout-card {
+    display: flex;
+    background: var(--banner-gradient);
+    padding: 2rem;
+    border-radius: 1rem;
+    justify-content: space-between;
+}
+
+.workout-info h4 {
+    font-size: 1.2rem;
+}
+
+.workout-info h5 {
+    font-size: 0.9rem;
+}
+
+.workout-card .workout-info h4, .workout-card .view-more h4 {
+    color: var(--white);
+    margin: 1rem 0;
+}
+
+.workout-card-icon img {
+    width: 120%;
+    height: auto;
+}
+
+#lowerbody-workout-icon {
+    margin: 0.5rem;
+}
+
+@media screen and (min-width: 720px) {
+    .workout-man {
+        margin-top: 1rem;
+        margin-left: 33%;
+    }
+    
+    .workout-man img {
+        width: 50%;
+    }
+
+    .main {
+        top: 60%;
+    }
+
+    .workout-card {
+        max-height: 80%;
+    }
+}

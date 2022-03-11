@@ -1,0 +1,254 @@
+body {
+    overflow: hidden;
+}
+
+.container {
+    max-width: 100%;
+    max-height: 70vh;
+}
+
+.container:before {
+    content: "";
+    background: var(--primary-gradient);
+    position: absolute;
+    height: 1350px;
+    width: 1350px;
+    top: -17%;
+    right: 48%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+.panel {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.left-panel {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 2;
+}
+
+.new-here {
+    color: var(--white);
+}
+
+.new-here h5 {
+    margin-left: 25%;
+    font-size: 1.4rem;
+}
+
+.new-here a button {
+    font-size: 1rem;
+    margin-top: 3%;
+    margin-left: 28%;
+    width: 130px;
+    height: 41px;
+}
+
+.left-panel img {
+    margin-top: 2rem;
+    margin-right: 1.8rem;
+    width: 55%;
+}
+
+.right-panel {
+    width: 50%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 1fr 4fr;
+    justify-content: center;
+    padding: 0;
+}
+
+.welcome-text {
+    margin: 1rem 0 0 4rem;
+    font-size: 1.1rem;
+}
+
+.card-login {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 0.5rem;
+}
+
+.input-field {
+    display: flex;
+    margin-bottom: 5%;
+}
+
+.input-field.user {
+    margin-right: 6%;
+}
+
+::placeholder {
+    opacity: 0.5;
+    font-family: var(--body-font);
+}
+
+input {
+    width: 100%;
+    height: 2rem;
+    border-radius: 50px;
+    padding: 20px 47px;
+    outline: none;
+    border: none;
+    font-size: 16px;   
+}
+
+h4 {
+    font-size: 0.95rem;
+    margin: 1rem 0 0rem 0;
+}
+
+.social-media {
+    display: flex;  
+}
+
+.social-link {
+    display: flex;
+    border-radius: 50px;
+    padding: 20px 47px;
+    margin: 0rem 1.3rem;
+    width: 35%;
+}
+
+.social-link p {
+    color: var(--black);
+    margin-left: 15%;
+}
+
+.login p {
+    color: var(--light-green);
+    margin-bottom: 10%;
+}
+
+.login-btn {
+    width: 100%;
+    height: 4rem;
+    font-size: 18px;
+}
+
+@media screen and (max-width: 1024px) {  
+    p {
+        font-size: 80%;
+    }
+
+    .container:before {
+        height: 60%;
+        width: 100%;
+        top: 0;
+        right: 0;
+        transform: translateY(0);
+        border-radius: 0;
+    }
+    
+    .main {
+        flex-direction: column;
+    }
+
+    .left-panel {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .new-here {
+        margin-left: 1rem;
+    }
+
+    .new-here h5 {
+        font-size: 1.3rem;
+    }
+    
+    .new-here a button {
+        margin-left: 33%;
+        width: 100px;
+        height: 35px;
+    }
+
+    .left-panel img {
+        width: 45%;
+    }
+    
+    .right-panel {
+        width: 100%;
+        height: auto;
+        grid-template-rows: 1fr 2fr;
+    }
+}
+
+@media screen and (max-width: 690px) {
+    .container:before {
+        height: 170%;
+        width: 1000px;
+        top: -15%;
+        right: -70%;
+        transform: translateY(-50%);
+        border-radius: 80%;
+    }
+
+    .left-panel {
+        flex-direction: column;
+    }
+
+    .left-panel img {
+        width: 70%;
+    }
+
+    .new-here {
+        margin: 0;
+    }
+
+    .new-here h5 {
+        font-size: 1.1rem;
+    }
+
+    .new-here a button {
+        width: 80px;
+        height: 30px;
+        font-size: 0.8rem;
+    }
+    
+    .welcome-text {
+        font-size: 70%;
+        margin-left: 5rem;
+    }
+
+    .card-login {
+        width: 70%;
+        margin-left: 15%;
+    }
+
+    .social-media, .login {
+        margin-left: 5%;
+    }
+
+    .login p {
+        margin-bottom: 20%;
+    }
+
+    .login-btn {
+        font-size: 16px;
+    }
+
+}

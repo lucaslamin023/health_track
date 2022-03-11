@@ -1,0 +1,107 @@
+.container {
+    padding-top: 2rem;
+}
+
+.relax-girl {
+    margin-top: 1rem;
+    margin-left: 25%;
+}
+
+.relax-girl img {
+    width: 70%;
+}
+
+.main {
+    background: var(--white);
+    width: 100%;
+    border-radius: 1.5rem;
+    z-index: 1;
+    padding: 1rem;
+    position: absolute;
+    top: 60%;
+}
+
+.calendar {
+    border-radius: 1rem;
+    display: flex;
+}
+
+.calendar button {
+    display: none;
+}
+
+.data {
+    text-align: center;
+    border-radius: 1rem;
+    margin: 0 2rem;
+    padding: 1rem;
+}
+
+.today {
+    background: var(--primary-gradient);
+}
+
+.today h4 {
+    color: var(--white);
+}
+
+.not-today {
+    background: var(--info-white);
+}
+
+.sleep-card {
+    display: flex;
+    background: var(--lighter-grey);
+    padding: 2rem;
+    border-radius: 1rem;
+    justify-content: space-between;
+}
+
+.sleep-card p {
+    opacity: 0.5;
+}
+
+.sleep-icon img {
+    width: 150%;
+}
+
+.sleep-info {
+    margin-top: 1rem;
+}
+
+.more-info {
+    margin-left: 2.5rem;
+    position: relative;
+    top: -1rem;
+}
+
+.more-info img {
+    width: 35%;
+}
+
+@media screen and (min-width: 720px) {
+    .relax-girl {
+        margin-top: 1rem;
+        margin-left: 40%;
+    }
+    
+    .relax-girl img {
+        width: 35%;
+    }
+
+    .main {
+        top: 60%;
+    }
+
+    .calendar {
+        margin-left: 30px;
+    }
+
+    .calendar button {
+        display: initial;
+    }
+
+    .data {
+        padding: 3rem;
+    }
+}

@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Roboto+Mono:wght@700&display=swap');
+
+:root {
+    --primary-gradient: linear-gradient(to right, #53E88B, #15BE77);
+    --secondary-gradient: linear-gradient(to right, #2ECC71, #158053);
+    --terciary-gradient: linear-gradient(to right, #6cfda1, #32FF7E);
+    --banner-gradient: linear-gradient(to bottom, #53E88B, #15BE77);
+    --grey: #7B6F72;
+    --light-grey: #ADA4A5;
+    --lighter-grey: #E5E5E5;
+    --info-white: #FDEFEF;
+    --white: #FFFFFF;
+    --black: #1D1617;
+    --green: #15BE77;
+    --light-green: #32FF7E;
+    --lighter-green: #00FF4C; 
+    --graphic: #1EE390;
+    --body-font: 'Poppins', sans-serif;
+    --logo-font: 'Roboto Mono', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body {
+    font-family: var(--body-font);
+    font-size: 1rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1, h3 {
+    color: var(--black);
+    font-weight: 700;
+    margin: 0;
+}
+
+h2, h4{
+    color: var(--light-grey);
+    font-weight: 400;
+    margin: 0;
+}
+
+h6 {
+    color: var(--white);
+    font-weight: 700;
+}
+
+option {
+    color: black;
+}
+
+.btn {
+    background: var(--primary-gradient);
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    color: var(--white);
+    cursor: pointer;
+}
+
+.btn:hover{
+    background: var(--terciary-gradient);
+    color: var(--white);
+}
+
+.btn.transparent {
+    background: none;
+    border: 1.5px solid #fff;
+}
+
+.logo {
+    font-family: var(--logo-font);
+    color: var(--white);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+/* Components */
+
+.activity-header {
+    background: var(--primary-gradient);
+    height: 50%;
+    z-index: 2;
+}
+
+.view-more h4 {
+    font-size: 1.1rem;
+    opacity: 0.8;
+}
+
+.view-more:hover h4{
+    color: var(--lighter-green);
+}
+
+.workout-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 1rem;
+}
+
+.workout-head h3 {
+    margin-left: 1rem;
+}
+
+.workout-nav h3 {
+    color: var(--white);
+}
+
+.arrow {
+    background: var(--white);
+    border-radius: 25%;
+    width: 2.8rem;
+    height: 2.2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrow img {
+    width: 50%;
+    margin: 6px 0 0 10px;
+}
+
+.workout-icon img {
+    width: 4.5rem;
+}
+
+.workout-component {
+    display: flex;
+    border-radius: 50px;
+    justify-content: space-around;
+    height: 20%;
+    background: var(--info-white);
+}
+
+.workout-component h4, .workout-component h5 {
+    font-size: 1rem;
+    margin: 0.6rem 0;
+}
+
+#workout-alarm, #sleep-alarm, #wakeup-alarm {
+    width: 3.5rem;
+    height: 2rem;
+    box-shadow: none;
+    background-color: var(--light-green);
+    border-color: var(--light-green);
+}
+
+.footer {
+    font-family: var(--logo-font);
+    margin: 2rem 0;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.6;
+}

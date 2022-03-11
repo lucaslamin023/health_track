@@ -1,0 +1,303 @@
+.container-fluid {
+  padding: 0 1rem;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--primary-gradient);
+}
+
+.nav-item img {
+  display: none;
+}
+
+.navbar-collapse {
+  flex-grow: 0;
+}
+
+.logo {
+  font-size: 120%;
+  margin-left: 1rem;
+}
+
+.nav-item {
+  display: flex;
+  padding: 1rem;
+}
+
+.nav-item img {
+  margin-top: 5px;
+  width: 30px;
+  height: 30px;
+}
+
+.nav-link {
+  color: var(--white);
+}
+
+.nav-link:hover {
+  color: var(--lighter-green);
+  transition: all 0.4s;
+}
+
+.navbar-toggler span img {
+  padding: 1rem;
+}
+
+/* Hero */
+
+.content-wrapper {
+  margin-top: 1rem;
+  justify-content: center;
+}
+
+.welcome-back, .today-target {
+  padding: 5%;
+}
+
+.welcome-back h1 {
+  font-size: 2rem;
+}
+
+.welcome-back h4{
+  font-size: 1.1rem;
+}
+
+.today-target {
+  display: flex;
+  background: var(--lighter-grey);
+  border-radius: 50px;
+  width: 100%;
+  height: 4rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.today-target h5 {
+  font-size: 1rem;
+  margin: 0;
+}
+
+.today-target .btn {
+  width: 30%;
+}
+
+.imc {
+  display: flex;
+  align-items: center;
+  max-width: 100%;
+  max-height: 80%;
+  margin: 2rem 0;
+  background: var(--banner-gradient);
+  border-radius: 30px;
+}
+
+.imc-info {
+  padding: 10%;
+  width: 80%;
+}
+
+
+.imc-info p {
+  color: var(--white);
+  font-size: 0.9rem;
+}
+
+.imc-info .btn {
+  background: var(--graphic);
+  width: 60%;
+}
+
+.imc-graphic {
+  width: 30%;
+  margin: 1.5rem 5rem 0 0;
+}
+
+.imc-graphic img {
+  width: 150%;  
+}
+
+/* Status */
+
+.status h3 {
+  margin-left: 35%;
+}
+
+.hearth-graphic img {
+  width: 100%;
+}
+
+.sleep, .calories {
+  background: var(--lighter-grey);
+  border-radius: 20px;
+  padding: 10%;
+  max-height: 90%;
+}
+
+.sleep p, .calories p {
+  color: var(--light-green);
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+
+.sleep img {
+  width: 100%;
+}
+
+.calories img {
+  width: 80%;
+  margin-left: 1rem;
+}
+
+/* Workout */
+
+.form-btn {
+  display: flex;
+  background: var(--primary-gradient);
+  align-items: center;
+}
+
+.form-btn img {
+  width: 15%;
+  height: 15%;
+  margin-right: 5%;
+}
+
+#workout-progress-form {
+  background: none;
+  box-shadow: none;
+  border: none;
+  color: var(--white);
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+
+.workout-graphic {
+  border-radius: 20px;
+  padding: 10%;
+}
+
+.workout-graphic img{
+  width: 100%;
+}
+
+#latest-workout {
+  margin-top: 0.5rem;
+}
+
+.latest-workout-info {
+  margin-right: 20%;
+}
+
+.progress-bar {
+  background: var(--primary-gradient);
+}
+
+.workout-btn img {
+  width: 2.5rem;
+}
+
+
+@media screen and (min-width: 720px) {
+  .logo, .welcome-back, .imc {
+    margin: 0;
+  }
+
+  .welcome-back h1 {
+    font-size: 2.2rem; 
+  }
+
+  .welcome-back, .today-target {
+    padding: 10%;
+  }
+
+  .imc {
+    width: 80%;
+    margin-left: 4rem;
+  }
+
+  .status h3 {
+    margin-left: 3.1rem;
+  }
+
+  .form-btn {
+    margin-left: 2rem;
+  }
+
+  .workout-progress-head h3, .latest-workout-head h3{
+    font-size: 1.2rem;
+  }
+
+  .latest-workout-info {
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .nav-item img {
+    display: initial;
+  }
+
+  .content-wrapper {
+    padding: 2rem 1rem;
+    justify-content: center;
+  }
+
+  .welcome-back h1 {
+    font-size: 2rem;
+  }
+  
+  .welcome-back, .today-target {
+    padding: 5%;
+  }
+
+  .today-target {
+    height: 10%;
+    justify-content: space-around;
+  }
+
+  .today-target .btn {
+    height: 100%;
+  }
+  
+  .imc {
+    width: 100%;
+    margin: 0;
+  }
+
+  .status {
+    padding: 2rem;
+  }
+
+  .sleep, .calories {
+    margin: 1.5rem 0.2rem 0 0.2rem;
+    max-height: 75%;
+    width: 80%;
+    margin-top: 3.5rem;
+  }
+  
+  .workouts {
+    margin: 0 5%;
+    background: var(--info-white);
+    border-radius: 2rem;
+    padding: 1rem;
+  }
+
+  .workout-progress-head {
+    justify-content: left;
+  }
+
+  .form-group {
+    margin-left: 1rem;
+  }
+
+  .workout-graphic {
+    padding: 0;
+  }
+
+  .workout-graphic img {
+    width: 75%;
+  }
+}
