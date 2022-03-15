@@ -149,6 +149,11 @@ h4 {
 }
 
 @media screen and (max-width: 1024px) {  
+    body {
+        overflow-x: hidden;
+        overflow-y: inherit;
+    }
+
     p {
         font-size: 80%;
     }
@@ -194,6 +199,7 @@ h4 {
         width: 100%;
         height: auto;
         grid-template-rows: 1fr 2fr;
+        margin-bottom: 2rem;
     }
 }
 
